@@ -1,0 +1,93 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 240px;
+    background-color: #f1f1f1;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+	 transition: all 1s ease-in-out;
+	 
+	  -webkit-transition: height 2s; /* For Safari 3.1 to 6.0 */
+    transition: height 2s;
+	    -webkit-transition: font-size 2s; /* For Safari 3.1 to 6.0 */
+    transition: font-size 2s;
+		height:40px;
+		font-size: 15px;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #555;
+    color: white;
+	 text-decoration: none;
+	   -ms-transform: scale(1,1); /* IE 9 */
+    -webkit-transform: scale(1,1); /* Safari */
+    transform: scale(1,1); /* Standard syntax */
+	 font-size: 17px;
+		height:50px
+	   -webkit-transition: height 1s; /* For Safari 3.1 to 6.0 */
+    transition: height 1s;
+	  -webkit-transition: font-size 1s; /* For Safari 3.1 to 6.0 */
+    transition: font-size 1s;
+	 -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+	-webkit-animation-timing-function: linear;
+}
+ 
+ @-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 10px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 10px;}
+}
+
+
+
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  
+}
+
+/* Float the list items side by side */
+ 
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+  
+   transition: all 2s ease-in-out;
+}
+.tabcontent:hover {
+     transition: all 1s ease-in-out;
+       -ms-transform: scale(1.08); /* IE 9 */
+    -webkit-transform: scale(1.08); /* Safari */
+    transform: scale(1.08); /* Standard syntax */
+  box-shadow: 3px 4px 5px #ccc;
+   
+}
+
+.topright {
+ float: right;
+ cursor: pointer;
+ font-size: 20px;
+}
+
+.topright:hover {color: red;}
+
+
+

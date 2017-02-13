@@ -1,0 +1,101 @@
+<!doctype html>
+<html ng-app="Avertra" >
+<head>
+  <meta charset="utf-8">
+  <title>My Angular Side Menu For  Avertra Corp</title>
+ 
+  <script>document.write("<base href=\"" + document.location + "\" />");</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="style.css">
+  <script src="app.js"></script>
+</head>
+<body ng-controller="MainCtrl">
+   <div class="jumbotron text-center">
+  <h1>My Angular Side Menu For  Avertra Corp  </h1>
+  <p>Using  HTML5, Bootstrap, Angular Js, CSS3 </p> 
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3">
+      <averteramenu name="name"></averteramenu>
+    </div>
+    <div class="col-sm-9">
+  
+<br>
+	  <div id="tab1" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">x</span>
+  <h3>Window 1</h3>
+  <p>Avertra is a global integration services, product development and consultancy 
+  organization focused on the energy and utilities industry. We attract and hire the 
+  industry’s most innovative and experienced problem solvers, each dedicated to our 
+  mission of helping our clients realize the full value of their investments in IT 
+  and in Avertra.</p>
+</div>
+
+<div id="tab2" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">x</span>
+  <h3>Window 2</h3>
+  <p>Avertra’s industry leading process knowledge and expertise resulted in the genesis of our
+  innovative User eXperience Unification (UXU) framework available throughout our MiUtility
+  platform of solutions for:
+-Call center optimization,
+-Omni-channel customer engagement,
+-Mobile work force management,
+-Meter reading,
+And much more!!</p>
+</div>
+
+<div id="tab3" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">x</span>
+  <h3> Window 3</h3>
+  <p>
+    Our goal is to have our customer achieve immediate realization of the benefit of our service within the first year post go live.
+    Our principle is to maintain a long term commitment and relationship with all our customers and employees.
+    Avertra analysts are experienced in end to end pilot project design and deployment, as well as technology and business process transformation.
+</p>
+</div>
+<div id="tab4" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">x</span>
+  <h3> Window 4</h3>
+  <p>Their once-a-month/quarterly relationship with you isn’t working. It’s not that they don’t appreciate you. They just want you to get with the times. They want the same web-based account management and real time interaction they’ve become accustom to due to the consumerization of the e-commerce boom. You are now expected to provide a secure, fast, modern, easy to use and hassle free service to your customer.</p>
+</div>
+<div id="tab5" class="tabcontent">
+  <span onclick="this.parentElement.style.display='none'" class="topright">x</span>
+  <h3>Window 5</h3>
+  <p> 2016 Avertra Corp</p>
+</div>
+    </div>
+     
+<script>
+ 
+function 
+opentab(evt, Name) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(Name).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+ 
+</script>
+  </div>
+</div>
+
+
+ 
+
+ 
+</body>
+</html>
